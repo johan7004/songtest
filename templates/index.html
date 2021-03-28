@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>
+        Song Application
+    </title>
+</head>
+<body>
+<div align="center">
+
+
+
+    <h1>Song Application Tamil</h1>
+    <form>
+        <input type="search" name="search" placeholder="Enter Song Name or Number">
+        <button type="submit"method="GET" action="{% url 'songs:home' %}">Search</button>
+    </form>
+
+{% for song in songs %}
+    <table>
+        <tr>
+            <h4> Song Number {{song.number}}</h4>
+            
+        </tr>
+        <tr>
+            <td><a  href="{% url 'songs:lyric-detail' slug=song.slug %}">{{song.title}}</a></td>
+            
+            </td>
+            
+        </tr>
+        
+    </table>
+    {% endfor %}
+</div>
+</body>
+</html>

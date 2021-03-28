@@ -1,0 +1,12 @@
+{
+  "name": "mob_app",
+  "displayName": "mob_app",
+  "expo": {
+    "name": "mob_app",
+    "slug": "mob_app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
